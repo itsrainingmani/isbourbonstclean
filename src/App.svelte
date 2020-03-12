@@ -23,9 +23,9 @@
     } else if (current.hour() >= 3 && current.hour() < 6) {
       answer = "🤢🤢🤢";
     }
-  } else if (current.hour() >= 6 && current.hour() < 10) {
+  } else if (current.hour() >= 6 && current.hour() < 14) {
     answer = "So clean you could eat off the ground";
-  } else if (current.hour() >= 10 && current.hour() < 18) {
+  } else if (current.hour() >= 14 && current.hour() < 18) {
     answer = "So .. Heck yeah!";
   } else if (current.hour() >= 18 && current.hour() < 22) {
     answer = "¯\\_(ツ)_/¯. I guess...";
@@ -93,7 +93,7 @@
 <main>
   <div class="hero-text">
     <h1>Is Bourbon Street Clean Now?</h1>
-    <p>It's {currentTime} in New Orleans</p>
+    <p>It's {currentTime} in N'awlins</p>
     <p>{answer}</p>
   </div>
 </main>
