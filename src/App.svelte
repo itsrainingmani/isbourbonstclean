@@ -17,17 +17,17 @@
     };
   });
 
-  $: if (current.hour() >= 22 || current.hour() < 6) {
+  $: if (current.hour() >= 23 || current.hour() < 6) {
     if (current.hour() >= 0 && current.hour() < 3) {
       answer = "Fuck no";
     } else if (current.hour() >= 3 && current.hour() < 6) {
       answer = "🤢🤢🤢";
     }
-  } else if (current.hour() >= 6 && current.hour() < 14) {
+  } else if (current.hour() >= 6 && current.hour() < 12) {
     answer = "So clean you could eat off the ground";
-  } else if (current.hour() >= 14 && current.hour() < 18) {
+  } else if (current.hour() >= 12 && current.hour() < 18) {
     answer = "So .. Heck yeah!";
-  } else if (current.hour() >= 18 && current.hour() < 22) {
+  } else if (current.hour() >= 18 && current.hour() < 23) {
     answer = "¯\\_(ツ)_/¯. I guess...";
   }
 </script>
