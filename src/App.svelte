@@ -17,7 +17,7 @@
     };
   });
 
-  $: if (current.hour() >= 23 || current.hour() < 6) {
+  $: if (current.hour() >= 22 || current.hour() < 6) {
     if (current.hour() >= 0 && current.hour() < 3) {
       answer = "Fuck no";
     } else if (current.hour() >= 3 && current.hour() < 6) {
